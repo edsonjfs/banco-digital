@@ -14,6 +14,5 @@ public class Main {
         System.out.println(corrente.saldo);
         System.out.println(poupanca.saldo);
         System.out.printf("%.2f", rendimentos);
-
     }
 }

@@ -6,22 +6,22 @@ public class Conta {
    protected double saldo = 0;
    protected Cliente cliente;
 
-    public Conta () {
+    public Conta() {
     }
 
-    public Conta (Cliente cliente) {
+    public Conta(Cliente cliente) {
         this.cliente = cliente;
     }
 
-    public void depositar (double valor) {
+    public void depositar(double valor) {
         saldo += valor;
     }
 
-    public void sacar (double valor) {
+    public void sacar(double valor) {
         saldo -= valor;
     }
 
-    public void transferir (double valor, Conta contaDestino) {
+    public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
     }
